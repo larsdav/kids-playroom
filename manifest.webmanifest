@@ -1,0 +1,16 @@
+{
+  "name": "Larsen Kids Playroom",
+  "short_name": "Playroom",
+  "description": "Learning games for ages 3 to 18. Works without internet.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#D9EEFF",
+  "theme_color": "#2F6FE0",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
