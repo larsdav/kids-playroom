@@ -2126,6 +2126,7 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
       function place(){ hero.setAttribute('x', pad + (p % n + .5) * u); hero.setAttribute('y', pad + (Math.floor(p / n) + .5) * u + fsz * .35); }
       place();
       function move(di){
+        if (p === goal) return;
         if (W[p][di]) { bonk(); return; }
         var r = Math.floor(p / n), c = p % n, d = D[di]; p = (r + d[0]) * n + c + d[1]; steps++; total++; tone(500, 40); place();
         if (p === goal) { S.key = null; ding(); addStar(); say(praise()); later(level, 900); }
